@@ -71,7 +71,7 @@ Será en encargado de ofrecer configuración de red a las máquinas, y de sumini
 ## 2.1 Instalar el servicio DHCP
 
 * Ir la MV1.
-* Instalamos el servicio DHCP (`zypper in dhcp-server yast2-dhcp-server`).
+* Instalamos el servicio DHCP (`zypper in dhcp-server yast2-dhcp-server`) o ejecutamos el archivo **[opensshInstall.sh]([url](https://github.com/srojo01/PXE/blob/main/src/dhcp-serverInstall.sh))** que hay en la carpeta **src** del github
 
 🧑‍🏫 _¿Realmente necesitamos el paquete `yast2-...`?_
 
