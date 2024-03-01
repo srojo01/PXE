@@ -89,46 +89,16 @@ fin si
 Lo que debemos hacer es pensar en cómo lo hemos hecho nosotros. Es decir, ¿qué comandos hemos ejecutado para hacerlo? y luego poner esos comandos en un fichero de texto (más o menos)
 
 ```shell script
-# versión 1 (Esto todavía no funciona)
+#!/bin/bash
+
 # Nos preguntamos si existe el fichero de configuración
-if (No existe el fichero /etc/dhcpd.conf) then
+if [ ! -f "/etc/dhcpd.conf" ]; then
   # Si el fichero de configuración no existe... podemos suponer que el paquete no está instalado
   # entonces vamos a instalar el paquete dhcp-server
-  system("zypper install dhcp-server")
-end
+  zypper install dhcp-server
+fi
+
 ```
-
-Seguimos avanzando un poco más...
-```shell script
-# versión 2 (Esto ya funciona)
-
-if (not File.exist?('/etc/dhcpd.conf'))
-  system("zypper install dhcp-server")
-end
-```
-
-¿Se entiende?... seguimos mejorándolo.
-Cualquiera de las versiones siguientes es aceptable. ¿Cuál prefieres?
-
-```shell script
-# versión 3
-if not File.exist? '/etc/dhcpd.conf'
-  system "zypper install dhcp-server"
-end
-```
-
-```shell script
-# versión 4
-unless File.exist? '/etc/dhcpd.conf'
-  system "zypper install dhcp-server"
-end
-```
-
-```shell script
-# versión 5
-system("zypper install dhcp-server") unless File.exist? '/etc/dhcpd.conf'
-```
-
 
 ## 2.2 Configurar interfaz de red
 
