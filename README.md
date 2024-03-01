@@ -340,6 +340,9 @@ Ahora vamos a exportar ese directorio mediante NFS. De esta forma, el contenido 
 ## 4.3 Comprobar
 
 * `df -hT | grep iso`
+```
+df -hT | grep iso
+```
 * `cat /etc/exports | grep iso`
 ```
 cat /etc/exports | grep iso
