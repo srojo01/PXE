@@ -30,8 +30,6 @@ de la red sin necesidad de grabar un disco CD/DVD o utilizar un pendrive.
 
 Con un servidor de este tipo en nuestra red, únicamente tendremos que descargar las ISO y conseguimos un método muy rápido de instalación que además prescinde de medios físicos.
 
-> Ver [ejemplo de PXE](fotos) en funcionamiento.
-
 
 **Propuesta de rúbrica:**
 
