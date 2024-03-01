@@ -123,7 +123,7 @@ Modificamos el fichero de configuraciób del servicio DHCP.
 * Edita el fichero `/etc/dhcpd.conf`:
 
 ```
-option domain-name "CURSO2122";
+option domain-name "CURSO2324";
 option domain-name-servers 1,1,1,1, 8.8.4.4;
 
 ddns-updates off;
