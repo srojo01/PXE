@@ -278,8 +278,9 @@ Este servicio lo usaremos para tener carpetas compartidas vía red.
 ## 4.1 Instalar el servicio
 
 * Instalar los paquetes nfs-kernel-server y yast2-nfs-server.
-
-🧑‍🏫 _¿Realmente...? ¡Vale! Ya no lo pregunta más._
+  ```
+./src/nfs-yast2-server-install.sh
+  ```
 
 ## 4.2 Configurar
 
