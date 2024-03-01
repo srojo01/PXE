@@ -66,6 +66,15 @@ Para montar el servicio PXE en la MV1 necesitaremos el servicio DHCP, el servici
 ```
 ./src/openssh-install.sh
 ```
+Si por algun motivo despues de hacer una conexión no nos deja volver a conectarnos por ssh, es decir se queda pensando la conexión, hacer en el SO que se quiere conectar:
+```
+systemctl status ssh
+sudo systemctl start ssh
+sudo ufw status
+sudo ufw allow ssh
+ping <ip-adaptador-usado>
+```
+
 # 2. Servicio DHCP
 
 Será en encargado de ofrecer configuración de red a las máquinas, y de suministrarles el fichero de arranque que necesitan para iniciarse.
