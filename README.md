@@ -62,7 +62,7 @@ Todas las tarjetas de red de hoy en día soportan arranque mediante PXE. Es conv
 
 Para montar el servicio PXE en la MV1 necesitaremos el servicio DHCP, el servicio TFTP y el servicio NFS. Vamos a ir uno a uno.
 
-*En MV1 Instalar OpenSSH:
+*En MV1 Instalar OpenSSH, que está [**src/openssh-install.sh**](https://github.com/srojo01/PXE/blob/main/src/openssh-install.sh):
 ```
 ./src/openssh-install.sh
 ```
