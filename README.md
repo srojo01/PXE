@@ -305,11 +305,17 @@ Este servicio lo usaremos para tener carpetas compartidas vía red.
 > Si usas la iso de instalación desatendida que hiciste en las prácticas anteriores... la instalación en los clientes será muy rápida.
 
 * Crear directorio `/mnt/opensuse.iso.d`. Este directorio lo vamos a usar para leer el contenido del fichero ISO sin tener que desempaquetarlo.
+```
+sudo mkdir /mnt/opensuse.iso.d
+```
 * Queremos acceder al contenido del fichero ISO pero sin "desempaquetarlo".
 * Edita el fichero `/etc/fstab` y crea un punto de montaje para la ISO en ese directorio:
 `/ruta/a/la/iso/openSUSE.iso /mnt/opensuse.iso.d/ udf,iso9660 user,auto,loop 0 0`
 * `mount -a`, se montan todas las configuraciones definidas en `/etc/fstab`.
 * `df -hT`, comprobamos.
+```
+sudo df -hT
+```
 
 🧑‍🏫 _¿Ves el contenido de la ISO en la carpeta creada (punto de montaje)?_
 
@@ -322,8 +328,14 @@ Ahora vamos a exportar ese directorio mediante NFS. De esta forma, el contenido 
 ## 4.3 Comprobar
 
 * `df -hT | grep iso`
-* `cat /etc/exports |grep iso`
+* `cat /etc/exports | grep iso`
+```
+cat /etc/exports | grep iso
+```
 * Comprobar el estado correcto del servicio (`systemctl status ...`).
+```
+sudo systemctl status nfs-server
+```
 
 # 5. Menú de arranque
 
