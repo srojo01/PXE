@@ -182,9 +182,22 @@ Las peticiones DHCP que nos interesan las filtramos mediante las dos reglas que 
 ## 2.4 Comprobar
 
 * `ip a` interfaces de red.
+  ```
+  ip a
+  ```
 * `ip route`, puerta de enlace.
+  
+  ```
+  ip route
+  ```
 * `cat /etc/sysconfig/dhcpd | grep DHCPD_INTERFACE`.
+  ```
+  cat /etc/sysconfig/dhcpd | grep DHCPD_INTERFACE
+  ```
 * Comprobar el estado correcto del servicio DHCP (`systemctl status dhcpd`)
+  ```
+  systemctl status dhcpd
+  ```
 
 # 3. Servicio TFTP
 
