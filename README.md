@@ -49,7 +49,7 @@ Usaremos 2 MV:
 
 | Id | SSOO | Nombre de host | Interfaz 1 externa | Interfaz 2 interna |
 | -- | ---- | -------------- | ---------- | ---------- |
-| MV1 |[OpenSUSE](../../../global/configuracion/opensuse.md)) | pxe-serverXX | IP estática (172.18.XX.31/16) | Red interna "netintXX" con IP estática (192.168.XX.31/24) |
+| MV1 |[OpenSUSE](https://download.opensuse.org/distribution/leap/15.5/iso/openSUSE-Leap-15.5-DVD-x86_64-Media.iso)) | pxe-serverXX | IP estática (172.18.XX.31/16) | Red interna "netintXX" con IP estática (192.168.XX.31/24) |
 | MV2 | Sin sistema operativo | | Red interna "netintXX" ||
 
 ![](files/pxe-esquema.svg)
