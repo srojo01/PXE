@@ -68,10 +68,14 @@ Para montar el servicio PXE en la MV1 necesitaremos el servicio DHCP, el servici
 ```
 Si por algun motivo despues de hacer una conexión no nos deja volver a conectarnos por ssh, es decir se queda pensando la conexión, hacer en el SO que se quiere conectar:
 ```
-systemctl status ssh
-sudo systemctl start ssh
-sudo ufw status
-sudo ufw allow ssh
+systemctl status sshd
+sudo systemctl start sshd
+sudo firewall-cmd --state
+sudo firewall-cmd --add-service=ssh --permanent
+sudo firewall-cmd --reload
+```
+`#addicionalmente`
+```
 ping <ip-adaptador-usado>
 ```
 
