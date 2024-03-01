@@ -231,7 +231,7 @@ cat /etc/sysconfig/atftpd | grep ATFTPD_BIND_ADDRESSES
 ```
 * Comprobar el estado correcto del servicio TFTP.
 ```
-sudo systemctl status tftp
+sudo systemctl status atftp
 ```
 
 ## 3.4 Problemas al iniciar el servicio
@@ -239,9 +239,18 @@ sudo systemctl status tftp
 **Problema 1**
 Si tenemos problemas con los sockets al iniciar el servicio, probamos lo siguiente:
 
-* `systemctl start atftpd.socket` para iniciar el socket primero y.
-* `systemctl start atftpd` para inciiar el servicio.
-
+Para iniciar el socket primero:
+```
+systemctl start atftpd.socket
+```
+Para Habilitar el servicio.
+```
+systemctl enable atftpd
+```
+Para inciiar el servicio.
+```
+systemctl start atftpd
+```
 **Problema 2 (server-limit-hit)**
 Para resolverlo hacemos lo siguiente:
 
