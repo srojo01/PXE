@@ -206,7 +206,9 @@ Las peticiones DHCP que nos interesan las filtramos mediante las dos reglas que 
 
 * Instalar los paquetes: atftp y yast2-tftp-server con el archivo [**src/atftpANDyast2-tftp-server-install.sh**](https://github.com/srojo01/PXE/blob/main/src/atftpANDyast2-tftp-server-install.sh)
 
-🧑‍🏫 _¿Realmente necesitamos el paquete `yast2-...`?_
+```
+./src/atftpANDyast2-tftp-server-install.sh
+```
 
 ## 3.2 Cambiar la configuración
 
