@@ -21,7 +21,7 @@ Tiempo      : 8 horas
 
 ## Introducción
 
-> Texto extraído del enlace [Puesta en marcha de un servidor PXE con OpenSUSE 13.1](https://es.opensuse.org/SDB:Puesta_en_marcha_de_un_servidor_PXE)`
+> Texto extraído del enlace [Puesta en marcha de un servidor PXE con OpenSUSE 15.0](https://es.opensuse.org/SDB:Puesta_en_marcha_de_un_servidor_PXE)`
 
 ¿Qué es y para que sirve montar un servidor de instalaciones PXE en nuestra red local?
 * Nos permite iniciar la instalación de un sistema operativo a través
