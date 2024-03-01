@@ -216,7 +216,7 @@ Las peticiones DHCP que nos interesan las filtramos mediante las dos reglas que 
 
 ## 3.1 Instalar el servicio
 
-* Instalar los paquetes: atftp y yast2-tftp-server.
+* Instalar los paquetes: atftp y yast2-tftp-server con el archivo [**install_atftpANDyast2-tftp-server.sh**](https://github.com/srojo01/PXE/blob/main/src/install_atftpANDyast2-tftp-server.sh)
 
 🧑‍🏫 _¿Realmente necesitamos el paquete `yast2-...`?_
 
