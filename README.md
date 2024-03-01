@@ -62,6 +62,8 @@ Todas las tarjetas de red de hoy en día soportan arranque mediante PXE. Es conv
 
 Para montar el servicio PXE en la MV1 necesitaremos el servicio DHCP, el servicio TFTP y el servicio NFS. Vamos a ir uno a uno.
 
+*En MV1 Instalar OpenSSH -> [**./src/openssh-install.sh**](https://github.com/srojo01/PXE/blob/main/src/openssh-install.sh)
+
 # 2. Servicio DHCP
 
 Será en encargado de ofrecer configuración de red a las máquinas, y de suministrarles el fichero de arranque que necesitan para iniciarse.
@@ -69,7 +71,7 @@ Será en encargado de ofrecer configuración de red a las máquinas, y de sumini
 ## 2.1 Instalar el servicio DHCP
 
 * Ir la MV1.
-* Instalamos el servicio DHCP (`zypper in dhcp-server yast2-dhcp-server`) o ejecutamos el archivo **[dhcp-server-install.sh](https://github.com/srojo01/PXE/blob/main/src/dhcp-serverInstall.sh)** que hay en la carpeta **src** del github
+* Instalamos el servicio DHCP (`zypper in dhcp-server yast2-dhcp-server`) o ejecutamos el archivo **[dhcp-server-install.sh](https://github.com/srojo01/PXE/blob/main/src/dhcp-server-install.sh)** que hay en la carpeta **src** del github
 
 🧑‍🏫 _¿Realmente necesitamos el paquete `yast2-...`?_
 
@@ -183,7 +185,7 @@ Las peticiones DHCP que nos interesan las filtramos mediante las dos reglas que 
 
 ## 3.1 Instalar el servicio
 
-* Instalar los paquetes: atftp y yast2-tftp-server con el archivo [**install_atftpANDyast2-tftp-server.sh**](https://github.com/srojo01/PXE/blob/main/src/install_atftpANDyast2-tftp-server.sh)
+* Instalar los paquetes: atftp y yast2-tftp-server con el archivo [**src/atftpANDyast2-tftp-server-install.sh**](https://github.com/srojo01/PXE/blob/main/src/atftpANDyast2-tftp-server-install.sh)
 
 🧑‍🏫 _¿Realmente necesitamos el paquete `yast2-...`?_
 
