@@ -86,10 +86,9 @@ Si (el paquete dhcp-server no está instalado) entonces
 fin si
 ```
 
-¿Cómo implementamos este algoritmo en Ruby? mmm Hay varias formas y todas válidas.
 Lo que debemos hacer es pensar en cómo lo hemos hecho nosotros. Es decir, ¿qué comandos hemos ejecutado para hacerlo? y luego poner esos comandos en un fichero de texto (más o menos)
 
-```ruby
+```shell script
 # versión 1 (Esto todavía no funciona)
 # Nos preguntamos si existe el fichero de configuración
 if (No existe el fichero /etc/dhcpd.conf) then
@@ -100,7 +99,7 @@ end
 ```
 
 Seguimos avanzando un poco más...
-```ruby
+```shell script
 # versión 2 (Esto ya funciona)
 
 if (not File.exist?('/etc/dhcpd.conf'))
@@ -111,21 +110,21 @@ end
 ¿Se entiende?... seguimos mejorándolo.
 Cualquiera de las versiones siguientes es aceptable. ¿Cuál prefieres?
 
-```ruby
+```shell script
 # versión 3
 if not File.exist? '/etc/dhcpd.conf'
   system "zypper install dhcp-server"
 end
 ```
 
-```ruby
+```shell script
 # versión 4
 unless File.exist? '/etc/dhcpd.conf'
   system "zypper install dhcp-server"
 end
 ```
 
-```ruby
+```shell script
 # versión 5
 system("zypper install dhcp-server") unless File.exist? '/etc/dhcpd.conf'
 ```
