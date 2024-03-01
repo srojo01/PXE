@@ -226,9 +226,13 @@ Con esta configuración:
 * Iniciar el servicio.
 
 ## 3.3 Comprobar
-
-* `cat /etc/sysconfig/atftpd |grep ATFTPD_BIND_ADDRESSES`
-* Comprobar el estado correcto del servicio (`systemctl status ...`).
+```
+cat /etc/sysconfig/atftpd | grep ATFTPD_BIND_ADDRESSES
+```
+* Comprobar el estado correcto del servicio TFTP.
+```
+sudo systemctl status tftp
+```
 
 ## 3.4 Problemas al iniciar el servicio
 
