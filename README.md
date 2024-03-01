@@ -207,7 +207,9 @@ Las peticiones DHCP que nos interesan las filtramos mediante las dos reglas que 
 * Comprobar el estado correcto del servicio DHCP (`systemctl status dhcpd`)
   ```
   systemctl status dhcpd
-  #addicionalmente
+  ```
+  `#addicionalmente`
+  ```
   sudo systemctl start dhcpd
   sudo systemctl enable dhcpd
   sudo systemctl status dhcpd
