@@ -76,6 +76,7 @@ sudo firewall-cmd --reload
 ```
 `#addicionalmente`
 ```
+sudo firewall-cmd --list-services
 ping <ip-adaptador-usado>
 ```
 
