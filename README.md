@@ -466,7 +466,7 @@ El ramdisk de openSUSE permite acceder al contenido del DVD a través de NFS, lo
 
 # 7. Otra ISO
 
-¿Te animas a poner otra ISO de instalación más en el servidor PXE? ¿Qué pasos hay que hacer?
+poner otra ISO de instalación más en el servidor PXE? ¿Qué pasos hay que hacer?
 
 # ANEXO
 
