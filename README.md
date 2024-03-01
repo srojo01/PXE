@@ -106,7 +106,7 @@ Queremos que el servicio PXE sólo se ofrezca por el interfaz de red 2 (El de la
 Recordemos que MV1 tiene 2 interfaces de red.
 * Hacemos una copia del fichero antes de modificarlo `cp /etc/sysconfig/dhcpd /etc/sysconfig/dhcp.bak`.
     ```
-    [**./src/dhcp-backup.sh**](https://github.com/srojo01/PXE/blob/main/src/dhcp-backup.sh)
+    ./src/dhcp-backup.sh
     ```
 * Edita el archivo `/etc/sysconfig/dhcpd` y en la línea `DHCPD_INTERFACE=""`
 añadir el nombre de interfaz que está en la red interna.
