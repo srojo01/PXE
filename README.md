@@ -43,6 +43,18 @@ Con un servidor de este tipo en nuestra red, únicamente tendremos que descargar
 
 # 1. Preparativos
 
+Abrimos Terminal:
+```
+sudo zypper install neofetch
+neofetch --ascii_distro openSUSE
+Editamos con:
+```
+nano ~/.bashrc
+```
+Introducimos al final del script:
+```
+neofetch --ascii_distro openSUSE
+```
 Usaremos 2 MV:
 
 | Id | SSOO | Nombre de host | Interfaz 1 externa | Interfaz 2 interna |
