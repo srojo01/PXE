@@ -229,7 +229,7 @@ Las peticiones DHCP que nos interesan las filtramos mediante las dos reglas que 
   Output Command que deberiamos ver:
   > ○ dhcpd.service - ISC DHCPv4 Server
   >  Loaded: loaded (/usr/lib/systemd/system/dhcpd.service; disabled; vendor pr>
-  >  Active: inactive (dead)
+  >  **Active: inactive (dead)**
   
   Adicionalmente:`
   ```
@@ -295,9 +295,16 @@ La salida del comando debería ser:
 sudo systemctl status atftp
 ```
 La salida del comando debería ser:
-```
+>● atftpd.socket - Advanced tftp Server Activation Socket
+>     Loaded: loaded (/usr/lib/systemd/system/atftpd.socket; disabled; vendor preset: disabled)
+>     **Active: active (listening)** since Tue 2024-03-05 15:16:31 CET; 22s ago
+>   Triggers: ● atftpd.service
+>     Listen: 0.0.0.0:69 (Datagram)
+>      Tasks: 0 (limit: 4915)
+>     CGroup: /system.slice/atftpd.socket
 
-```
+>Mar 27 15:16:31 localhost.localdomain systemd[1]: Listening on Advanced tftp Server Activation Socket.
+
 ## 3.4 Problemas al iniciar el servicio
 
 **Problema 1**
