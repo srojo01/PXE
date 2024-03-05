@@ -288,11 +288,16 @@ Con esta configuración:
 ```
 cat /etc/sysconfig/atftpd | grep ATFTPD_BIND_ADDRESSES
 ```
+La salida del comando debería ser:
+>ATFTPD_BIND_ADDRESSES="192.168.XX.31"
 * Comprobar el estado correcto del servicio TFTP.
 ```
 sudo systemctl status atftp
 ```
+La salida del comando debería ser:
+```
 
+```
 ## 3.4 Problemas al iniciar el servicio
 
 **Problema 1**
