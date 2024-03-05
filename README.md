@@ -598,3 +598,8 @@ Los pasos a seguir serían sacar el kernel y el ramdisk a un subdirectorio del s
 # cp /tmp/live/boot/x86_64/loader/initrd /srv/tftpboot/imagenes/openSUSE-Live/
 # umount /tmp/live
 ```
+
+Repositorios Necesarios OpenSuse
+```
+https://en.opensuse.org/Package_repositories
+```
