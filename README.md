@@ -296,14 +296,14 @@ sudo systemctl status atftp
 ```
 La salida del comando debería ser:
 >● atftpd.socket - Advanced tftp Server Activation Socket <br />
->     Loaded: loaded (/usr/lib/systemd/system/atftpd.socket; disabled; vendor preset: disabled) <br />
->     **Active: active (listening)** since Tue 2024-03-05 15:16:31 CET; 22s ago <br />
->     Triggers: ● atftpd.service <br />
->     Listen: 0.0.0.0:69 (Datagram) <br />
->     Tasks: 0 (limit: 4915) <br />
->     CGroup: /system.slice/atftpd.socket <br />
->
->Mar 27 15:16:31 localhost.localdomain systemd[1]: Listening on Advanced tftp Server Activation Socket.
+    >Loaded: loaded (/usr/lib/systemd/system/atftpd.socket; disabled; vendor preset: disabled) <br />
+    >**Active: active (listening)** since Tue 2024-03-05 15:16:31 CET; 22s ago <br />
+    >Triggers: ● atftpd.service <br />
+    >Listen: 0.0.0.0:69 (Datagram) <br />
+    >Tasks: 0 (limit: 4915) <br />
+    >CGroup: /system.slice/atftpd.socket <br />
+    >
+    >Mar 27 15:16:31 localhost.localdomain systemd[1]: Listening on Advanced tftp Server Activation Socket.
 
 ## 3.4 Problemas al iniciar el servicio
 
@@ -330,7 +330,7 @@ pxe-server12:~ # systemctl status atftpd.socket
 ● atftpd.socket - Advanced tftp Server Activation Socket                                     
      Loaded: loaded (/usr/lib/systemd/system/atftpd.socket; enabled; vendor preset: disabled)
      Active: failed (Result: service-start-limit-hit) since Thu 2022-06-09 16:21:52 WEST; 16h ago
-   Triggers: ● atftpd.service
+     Triggers: ● atftpd.service
      Listen: 0.0.0.0:69 (Datagram)
 
 Jun 09 09:31:27 pxe-server12 systemd[1]: Listening on Advanced tftp Server Activation Socket.
