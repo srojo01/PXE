@@ -226,6 +226,11 @@ Las peticiones DHCP que nos interesan las filtramos mediante las dos reglas que 
   ```
   systemctl status dhcpd
   ```
+  Output Command que deberiamos ver:
+  > ○ dhcpd.service - ISC DHCPv4 Server
+  >   Loaded: loaded (/usr/lib/systemd/system/dhcpd.service; disabled; vendor pr>
+  >   Active: inactive (dead)
+  
   `#addicionalmente`
   ```
   sudo systemctl start dhcpd
