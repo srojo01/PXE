@@ -47,6 +47,7 @@ Abrimos Terminal:
 ```
 sudo zypper install neofetch
 neofetch --ascii_distro openSUSE
+```
 Editamos con:
 ```
 nano ~/.bashrc
