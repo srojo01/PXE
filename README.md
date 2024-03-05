@@ -250,7 +250,10 @@ Las peticiones DHCP que nos interesan las filtramos mediante las dos reglas que 
 
 ## 3.2 Cambiar la configuración
 
-* Editar el archivo `/etc/sysconfig/atftpd` (Hacemos copia de seguridad del fichero antes de modificarlo)... mmm y 🖥 ¿Qué tal configurar por Yast?
+* Editar el archivo `/etc/sysconfig/atftpd` (Hacemos copia de seguridad del fichero antes de modificarlo)
+```
+sudo cp /etc/sysconfig/atftpd /etc/sysconfig/atftpd.bak
+```
 
 ```
 # daemon user (tftp)
