@@ -247,6 +247,12 @@ Las peticiones DHCP que nos interesan las filtramos mediante las dos reglas que 
 ```
 ./src/atftpANDyast2-tftp-server-install.sh
 ```
+Si por algún motivo no está añadido el paquete en Yast2, hacer lo siguiente:
+```
+zypper addrepo https://download.opensuse.org/repositories/YaST:/Head/openSUSE_Leap_15.5/YaST:Head.repo
+zypper refresh
+zypper install yast2-tftp-server
+```
 
 ## 3.2 Cambiar la configuración
 
