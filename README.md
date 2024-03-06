@@ -253,6 +253,11 @@ zypper addrepo https://download.opensuse.org/repositories/YaST:/Head/openSUSE_Le
 zypper refresh
 zypper install yast2-tftp-server
 ```
+Adicionalmente si quiero quitar un repositorio:
+```
+sudo zypper repos --details
+sudo zypper removerepo repo-oss #repo-oss es el nombre del identificador del repositorio
+```
 
 ## 3.2 Cambiar la configuración
 
