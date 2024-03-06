@@ -602,4 +602,5 @@ Los pasos a seguir serían sacar el kernel y el ramdisk a un subdirectorio del s
 [Repositorios](https://en.opensuse.org/Package_repositories) Necesarios OpenSuse
 ```
 https://en.opensuse.org/Package_repositories
+[TFTP-SERVER with Yast2]([url](https://software.opensuse.org/download/package?package=yast2-tftp-server&project=YaST%3AHead)https://software.opensuse.org/download/package?package=yast2-tftp-server&project=YaST%3AHead)
 ```
