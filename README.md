@@ -610,7 +610,7 @@ Los pasos a seguir serían sacar el kernel y el ramdisk a un subdirectorio del s
 # umount /tmp/live
 ```
 
-**REPOS**:
+**ANEXO REPOS**:
 
 [RepositoriosNecesarios OpenSuse](https://en.opensuse.org/Package_repositories) 
 
