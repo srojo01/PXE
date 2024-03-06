@@ -610,7 +610,8 @@ Los pasos a seguir serían sacar el kernel y el ramdisk a un subdirectorio del s
 # umount /tmp/live
 ```
 
-**REPOS**
+**REPOS**:
+
 [RepositoriosNecesarios OpenSuse](https://en.opensuse.org/Package_repositories) 
 
 [TFTP-SERVER with Yast2](https://software.opensuse.org/download/package?package=yast2-tftp-server&project=YaST%3AHead)
