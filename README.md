@@ -154,7 +154,7 @@ Modificamos el fichero de configuraciób del servicio DHCP.
 
 ```
 option domain-name "CURSO2324";
-option domain-name-servers 1,1,1,1, 8.8.4.4;
+option domain-name-servers 1.1.1.1, 8.8.4.4;
 
 ddns-updates off;
 ddns-update-style none;
