@@ -402,8 +402,8 @@ Este servicio lo usaremos para tener carpetas compartidas vía red.
     -Para determinar si tu archivo ISO es de tipo UDF o ISO9660, puedes utilizar la herramienta file:
   
       ```
-      file /ruta/a/la/iso/openSUSE.iso
-      ```
+      file /ruta/a/la/iso/openSUSE.iso```
+      
   
           -Si el archivo ISO es de tipo ISO9660:
           ```
