@@ -403,9 +403,7 @@ Este servicio lo usaremos para tener carpetas compartidas vía red.
       ```
       file /ruta/a/la/iso/openSUSE.iso
       ```
-
-  
-  -Si el archivo ISO es de tipo ISO9660:
+  -Si el archivo ISO es de tipo ISO9660, verás algo similar a esto::
   >/path/to/openSUSE.iso: ISO 9660 CD-ROM filesystem data
   
   -Si el archivo ISO es de tipo UDF, verás algo similar a esto:
