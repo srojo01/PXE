@@ -286,7 +286,7 @@ Si está  bien instalado tiene que mostrar algo tal que así:
 
 * Editar el archivo `/etc/sysconfig/atftpd` (Hacemos copia de seguridad del fichero antes de modificarlo)
 ```
-sudo cp /etc/sysconfig/atftpd /etc/sysconfig/atftpd.bak
+cp /etc/sysconfig/atftpd /etc/sysconfig/atftpd.bak
 ```
 
 ```
