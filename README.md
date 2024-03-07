@@ -463,6 +463,7 @@ cat /etc/exports | grep iso
 ```
 sudo systemctl status nfs-server
 ```
+>![](photos/nfsserver.png)
 
 # 5. Menú de arranque
 
