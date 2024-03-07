@@ -396,6 +396,22 @@ Este servicio lo usaremos para tener carpetas compartidas vía red.
 > Si usas la iso de instalación desatendida que hiciste en las prácticas anteriores... la instalación en los clientes será muy rápida.
 
 * Crear directorio `/mnt/opensuse.iso.d`. Este directorio lo vamos a usar para leer el contenido del fichero ISO sin tener que desempaquetarlo.
+* Cosas a saber antes de montar la ISO:
+
+Para determinar si tu archivo ISO es de tipo UDF o ISO9660, puedes utilizar la herramienta file:
+```
+file /ruta/a/la/iso/openSUSE.iso
+```
+Si el archivo ISO es de tipo ISO9660:
+```
+/path/to/openSUSE.iso: ISO 9660 CD-ROM filesystem data
+
+```
+Si el archivo ISO es de tipo UDF, verás algo similar a esto:
+```
+/path/to/openSUSE.iso: ISO 9660 CD-ROM filesystem data (DOS/MBR boot sector) 'SOMELABEL'
+```
+
 ```
 sudo mkdir /mnt/opensuse.iso.d
 ```
