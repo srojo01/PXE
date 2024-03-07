@@ -646,5 +646,31 @@ ls -la /etc/zypp/repos.d/
 -rw-r--r-- 1 root root  158 mar  6 13:38 Update_Non-OSS.repo
 -rw-r--r-- 1 root root  138 mar  6 13:38 Update.repo
 ```
+Añadir repo en opensuse ChatGPT  
+To add the repository http://download.opensuse.org/update/leap/15.5/backports_debug/ to /etc/zypp/repos.d/ in openSUSE, you can create a new repository file in that directory with the following steps:
+
+Open a terminal.
+```
+sudo nano /etc/zypp/repos.d/opensuse-update-leap-15.5-backports_debug.repo
+```
+Add the repository configuration to the file. Here's an example of what the configuration might look like
+```
+[opensuse-update-leap-15.5-backports_debug]
+name=OpenSUSE Leap 15.5 Backports Debug
+enabled=1
+autorefresh=1
+baseurl=http://download.opensuse.org/update/leap/15.5/backports_debug/
+type=rpm-md
+gpgcheck=1
+gpgkey=https://download.opensuse.org/update/leap/15.5/backports_debug/repodata/repomd.xml.key
+```
+Adjust the name, baseurl, and gpgkey according to the specifics of the repository you're adding.
+
+Save the changes and exit the text editor.
+
+Refresh the list of repositories to ensure the newly added repository is recognized:
+```
+sudo zypper refresh
+```
 
 [TFTP-SERVER with Yast2](https://software.opensuse.org/download/package?package=yast2-tftp-server&project=YaST%3AHead)
