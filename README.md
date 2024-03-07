@@ -613,5 +613,38 @@ Los pasos a seguir serían sacar el kernel y el ramdisk a un subdirectorio del s
 **ANEXO REPOS**:
 
 [RepositoriosNecesarios OpenSuse](https://en.opensuse.org/Package_repositories) 
+```
+ls -la /etc/zypp/repos.d/
+```
+```
+-rw-r--r-- 1 root root  182 mar  6 13:38 Backports_Debug-Update.repo
+-rw-r--r-- 1 root root  164 mar  6 13:38 Backports_Update.repo
+-rw-r--r-- 1 root root  179 mar  6 13:38 Debug-distribution.repo
+-rw-r--r-- 1 root root  156 mar  6 13:38 GNOME:Apps.repo
+-rw-r--r-- 1 root root  155 mar  6 13:38 Non-OSS.repo
+-rw-r--r-- 1 root root  173 mar  6 13:38 openSUSE-Leap-15.5-1.repo
+-rw-r--r-- 1 root root  109 mar  7 09:30 opensuse-oss.repo
+-rw-r--r-- 1 root root  143 mar  6 13:38 OSS.repo
+-rw-r--r-- 1 root root  244 mar  6 13:38 repo-backports-debug-update.repo
+-rw-r--r-- 1 root root  199 mar  6 13:38 repo-backports-update.repo
+-rw-r--r-- 1 root root  179 mar  6 13:38 repo-debug-non-oss.repo
+-rw-r--r-- 1 root root  157 mar  6 13:38 repo-debug.repo
+-rw-r--r-- 1 root root  183 mar  6 13:38 repo-debug-update-non-oss.repo
+-rw-r--r-- 1 root root  162 mar  6 13:38 repo-debug-update.repo
+-rw-r--r-- 1 root root  178 mar  6 13:38 repo-non-oss.repo
+-rw-r--r-- 1 root root  164 mar  6 13:38 repo-openh264.repo
+-rw-r--r-- 1 root root  167 mar  6 13:38 repo-oss.repo
+-rw-r--r-- 1 root root  222 mar  6 13:38 repo-sle-debug-update.repo
+-rw-r--r-- 1 root root  208 mar  6 13:38 repo-sle-update.repo
+-rw-r--r-- 1 root root  160 mar  6 13:38 repo-source.repo
+-rw-r--r-- 1 root root  183 mar  6 13:38 repo-update-non-oss.repo
+-rw-r--r-- 1 root root  165 mar  6 13:38 repo-update.repo
+-rw-r--r-- 1 root root  164 mar  6 13:38 SLE_Debug-Update.repo
+-rw-r--r-- 1 root root  146 mar  6 13:38 SLE_Update.repo
+-rw-r--r-- 1 root root  170 mar  6 13:38 Src-Non-OSS.repo
+-rw-r--r-- 1 root root  158 mar  6 13:38 Src-OSS.repo
+-rw-r--r-- 1 root root  158 mar  6 13:38 Update_Non-OSS.repo
+-rw-r--r-- 1 root root  138 mar  6 13:38 Update.repo
+```
 
 [TFTP-SERVER with Yast2](https://software.opensuse.org/download/package?package=yast2-tftp-server&project=YaST%3AHead)
