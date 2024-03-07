@@ -65,7 +65,7 @@ Usaremos 2 MV:
 
 ![](photos/pxe-esquema.svg)
 
-> OJO: La red interna "netint" se configura en VirtualBox.
+> OJO👀: La red interna "netint" se configura en VirtualBox.
 
 Todas las tarjetas de red de hoy en día soportan arranque mediante PXE. Es conveniente revisar la EFI/BIOS del equipo para asegurarnos de tenerlo activo. En nuestro caso, lo haremos por VirtualBox.
 
@@ -533,7 +533,7 @@ Veamos qué podemos seguir aprendiendo de la sintaxis de estos ficheros:
 
 ## 5.3. Probando el menú desde el cliente
 
-> OJO: Para evitar problemas de conectividad comprobar la configuración del cortafuegos en el servidor.
+> OJO👀: Para evitar problemas de conectividad comprobar la configuración del cortafuegos en el servidor.
 
 * Entregar un pequeño vídeo de este apartado.
 * Reiniciar una máquina cliente. Puede que tengas que pulsar la tecla F12 durante el arranque para seleccionar el arranque PXE.
