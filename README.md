@@ -439,8 +439,16 @@ Ahora vamos a exportar ese directorio mediante NFS. De esta forma, el contenido 
 * Editar el archivo `/etc/exports`.
 * Añadir `/mnt/opensuse.iso.d   *(ro,no_root_squash,async,no_subtree_check)`
 * Configurar el arranque automático del servicio `nfsserver`.
+  ```
+  sudo systemctl enable nfsserver
+  sudo systemctl enable nfsserver
+  sudo systemctl start nfsserver
+  ```
 * Reiniciar el servidor NFS.
-
+  ```
+  sudo systemctl restart nfsserver
+  sudo systemctl status nfsserver
+  ```
 ## 4.3 Comprobar
 
 * `df -hT | grep iso`
