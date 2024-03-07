@@ -400,14 +400,17 @@ Este servicio lo usaremos para tener carpetas compartidas vía red.
 * Cosas a saber antes de montar la ISO:
 
     -Para determinar si tu archivo ISO es de tipo UDF o ISO9660, puedes utilizar la herramienta file:
+  
       ```
       file /ruta/a/la/iso/openSUSE.iso
       ```
+  
           -Si el archivo ISO es de tipo ISO9660:
           ```
           /path/to/openSUSE.iso: ISO 9660 CD-ROM filesystem data
 
           ```
+  
           -Si el archivo ISO es de tipo UDF, verás algo similar a esto:
           ```
           /path/to/openSUSE.iso: ISO 9660 CD-ROM filesystem data (DOS/MBR boot sector) 'SOMELABEL'
