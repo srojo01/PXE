@@ -419,7 +419,7 @@ sudo mkdir /mnt/opensuse.iso.d
 
 El directorio _/mnt/opensuse.iso.d/_ quedará tal que así:
 
-![](photos/mount.png)
+>![](photos/mount.png)
 
 * `mount -a`, se montan todas las configuraciones definidas en `/etc/fstab`.
 * `df -hT`, comprobamos.
