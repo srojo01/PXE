@@ -259,6 +259,29 @@ sudo zypper repos --details
 sudo zypper removerepo repo-oss #repo-oss es el nombre del identificador del repositorio
 ```
 
+Si está  bien instalado tiene que mostrar algo tal que así:
+```
+    ubu@servidorpxe:~/Downloads/PXE> sudo zypper search atftp
+    Cargando datos del repositorio...
+    Leyendo los paquetes instalados...
+    
+    S  | Name              | Summary                             | Type
+    ---+-------------------+-------------------------------------+------------
+    i+ | atftp             | Servidor y cliente TFTP avanzado    | paquete
+       | atftp             | Servidor y cliente TFTP avanzado    | paquete src
+       | atftp-debuginfo   | Debug information for package atftp | paquete
+       | atftp-debugsource | Debug sources for package atftp     | paquete
+    ubu@servidorpxe:~/Downloads/PXE> sudo zypper search tftp-server
+    Cargando datos del repositorio...
+    Leyendo los paquetes instalados...
+    
+    S  | Name              | Summary                                  | Type
+    ---+-------------------+------------------------------------------+------------
+    i+ | yast2-tftp-server | YaST2: configuración de un servidor TFTP | paquete
+       | yast2-tftp-server | YaST2: configuración de un servidor TFTP | paquete src
+
+```
+
 ## 3.2 Cambiar la configuración
 
 * Editar el archivo `/etc/sysconfig/atftpd` (Hacemos copia de seguridad del fichero antes de modificarlo)
