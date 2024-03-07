@@ -398,7 +398,7 @@ Este servicio lo usaremos para tener carpetas compartidas vía red.
 * Crear directorio `/mnt/opensuse.iso.d`. Este directorio lo vamos a usar para leer el contenido del fichero ISO sin tener que desempaquetarlo.
 
 * Cosas a saber antes de montar la ISO:
-
+ 
     -Para determinar si tu archivo ISO es de tipo UDF o ISO9660, puedes utilizar la herramienta file:
       ```
       file /ruta/a/la/iso/openSUSE.iso
@@ -414,7 +414,7 @@ Este servicio lo usaremos para tener carpetas compartidas vía red.
 sudo mkdir /mnt/opensuse.iso.d
 ```
 * Queremos acceder al contenido del fichero ISO pero sin "desempaquetarlo".
-* Edita el fichero `/etc/fstab` y crea un punto de montaje para la ISO(recuerda poner si es _udf_ o _iso9660_, OJO solo vale poner un tipo) en ese directorio:
+* Edita el fichero `/etc/fstab` y crea un punto de montaje para la ISO(recuerda poner si es _udf_ o _iso9660_, OJO👀!!! solo vale poner un tipo) en ese directorio:
 ```  
 /ruta/a/la/iso/openSUSE.iso /mnt/opensuse.iso.d/ udf,iso9660 user,auto,loop 0 0
 ```
