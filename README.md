@@ -414,9 +414,9 @@ Este servicio lo usaremos para tener carpetas compartidas vía red.
 sudo mkdir /mnt/opensuse.iso.d
 ```
 * Queremos acceder al contenido del fichero ISO pero sin "desempaquetarlo".
-* Edita el fichero `/etc/fstab` y crea un punto de montaje para la ISO en ese directorio:
+* Edita el fichero `/etc/fstab` y crea un punto de montaje para la ISO(recuerda poner si es _udf_ o _iso9660_, OJO solo vale poner un tipo) en ese directorio:
 ```  
-`/ruta/a/la/iso/openSUSE.iso /mnt/opensuse.iso.d/ udf,iso9660 user,auto,loop 0 0`
+/ruta/a/la/iso/openSUSE.iso /mnt/opensuse.iso.d/ udf,iso9660 user,auto,loop 0 0
 ```
 
 El directorio _/mnt/opensuse.iso.d/_ quedará tal que así:
