@@ -330,13 +330,13 @@ sudo systemctl status atftp
 ```
 La salida del comando debería ser:
 ```    
-● atftpd.socket - Advanced tftp Server Activation Socket <br />
-    Loaded: loaded (/usr/lib/systemd/system/atftpd.socket; disabled; vendor preset: disabled) <br />
-    **Active: active (listening)** since Tue 2024-03-05 15:16:31 CET; 22s ago <br />
-    Triggers: ● atftpd.service <br />
-    Listen: 0.0.0.0:69 (Datagram) <br />
-    Tasks: 0 (limit: 4915) <br />
-    CGroup: /system.slice/atftpd.socket <br />
+● atftpd.socket - Advanced tftp Server Activation Socket \
+    Loaded: loaded (/usr/lib/systemd/system/atftpd.socket; disabled; vendor preset: disabled) 
+    **Active: active (listening)** since Tue 2024-03-05 15:16:31 CET; 22s ago 
+    Triggers: ● atftpd.service 
+    Listen: 0.0.0.0:69 (Datagram) 
+    Tasks: 0 (limit: 4915) 
+    CGroup: /system.slice/atftpd.socket 
     
     Mar 27 15:16:31 localhost.localdomain systemd[1]: Listening on Advanced tftp Server Activation Socket.
 ```
