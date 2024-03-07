@@ -477,6 +477,7 @@ Ahora vamos a preparar el menú de arranque PXE que se encontrarán los clientes
 ```bash
 mkdir /srv/tftpbootp/xelinux.cfg
 mkdir /srv/tftpboot/imagesXX
+mkdir /srv/tftpboot/pxelinux.cfg
 cp /usr/share/syslinux/pxelinux.0 /srv/tftpboot
 cp /usr/share/syslinux/menu.c32 /srv/tftpboot
 cp /usr/share/syslinux/reboot.c32 /srv/tftpboot
