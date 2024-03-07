@@ -408,16 +408,12 @@ Este servicio lo usaremos para tener carpetas compartidas vía red.
   
           -Si el archivo ISO es de tipo ISO9660:
   
-          ```
-          /path/to/openSUSE.iso: ISO 9660 CD-ROM filesystem data
-
-          ```
+          >/path/to/openSUSE.iso: ISO 9660 CD-ROM filesystem data
   
           -Si el archivo ISO es de tipo UDF, verás algo similar a esto:
   
-          ```
-          /path/to/openSUSE.iso: ISO 9660 CD-ROM filesystem data (DOS/MBR boot sector) 'SOMELABEL'
-          ```
+          >/path/to/openSUSE.iso: ISO 9660 CD-ROM filesystem data (DOS/MBR boot sector) 'SOMELABEL'
+          
 
 ```
 sudo mkdir /mnt/opensuse.iso.d
