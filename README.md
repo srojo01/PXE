@@ -612,7 +612,7 @@ Los pasos a seguir serían sacar el kernel y el ramdisk a un subdirectorio del s
 
 **ANEXO REPOS**:
 
-[RepositoriosNecesarios OpenSuse](https://en.opensuse.org/Package_repositories) 
+[Repositorios Necesarios OpenSuse](https://en.opensuse.org/Package_repositories) 
 ```
 ls -la /etc/zypp/repos.d/
 ```
