@@ -179,15 +179,21 @@ class "etherboot" {
 # Las direcciones de ese tipo quedarán englobadas en esta subnet
 subnet 192.168.XX.0 netmask 255.255.255.0 {
   pool {
-    range 192.168.XX.201 192.168.XX.220; # con este rango hay de sobra
+    # con este rango hay de sobra
+    range 192.168.XX.201 192.168.XX.220;
+    
     filename "pxelinux.0";
-    server-name "192.168.XX.31";         # Coincide con la IP del servidor
-    next-server 192.168.XX.31;           # Dirección del servidor TFTP
+    # Coincide con la IP del servidor
+    server-name "192.168.XX.31";
+    # Dirección del servidor TFTP         
+    next-server 192.168.XX.31;           
     option subnet-mask 255.255.255.0;
     option broadcast-address 192.168.XX.255;
     option routers 192.168.XX.31;
-    allow members of "pxe";              # permitido sólo para clientes PXE
-    allow members of "etherboot";        # y también para los de etherboot
+    # permitido sólo para clientes PXE
+    allow members of "pxe";              
+    # y también para los de etherboot
+    allow members of "etherboot";        
   }
 }
 ```
